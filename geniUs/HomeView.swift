@@ -1,14 +1,20 @@
 import SwiftUI
 // the view
 struct HomeView: View {
+    
     var body: some View {
         // the content in the view
         VStack {
+            
+            
             // vertical stacked content
             Text("Welcome to geniUS!")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
+           Spacer()
+                
+            
 
             Image(information.image)
                 .resizable()

@@ -1,5 +1,6 @@
 import SwiftUI
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         TabView {
             HomeView()
@@ -22,6 +23,7 @@ struct ContentView: View {
                     Label("Fun Facts", systemImage: "hand.thumbsup")
                 }
         }
+        .background(colorScheme == .dark ? Color.black : Color.white)
         
     }
 }
