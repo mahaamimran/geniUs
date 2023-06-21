@@ -8,19 +8,13 @@ struct HomeView: View {
             
             
             // vertical stacked content
-            Text("Welcome to geniUS!")
-                .font(.largeTitle)
+            Text("Tasks")
+                .font(.title)
                 .fontWeight(.bold)
                 .padding()
-           Spacer()
-                
             
 
-            Image(information.image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(10)
-                .padding(40)
+           
 
             Text(information.name)
                 .font(.title)
