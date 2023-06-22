@@ -4,7 +4,7 @@ import SwiftUI
 struct geniUsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }

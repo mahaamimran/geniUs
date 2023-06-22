@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA58CA982A44816100104AA8 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA58CA972A44816100104AA8 /* Welcome.swift */; };
 		EA95DC472A38777500D30ED5 /* geniUsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95DC462A38777500D30ED5 /* geniUsApp.swift */; };
 		EA95DC492A38777500D30ED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95DC482A38777500D30ED5 /* ContentView.swift */; };
 		EA95DC4B2A38777700D30ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA95DC4A2A38777700D30ED5 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA58CA972A44816100104AA8 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		EA95DC432A38777500D30ED5 /* geniUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geniUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA95DC462A38777500D30ED5 /* geniUsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geniUsApp.swift; sourceTree = "<group>"; };
 		EA95DC482A38777500D30ED5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				EA9CD9802A38792E007823FF /* FavoritesView.swift */,
 				EA9CD9822A387961007823FF /* FunFactsView.swift */,
 				EA9CD9842A3879B4007823FF /* Data.swift */,
+				EA58CA972A44816100104AA8 /* Welcome.swift */,
 				EA95DC4A2A38777700D30ED5 /* Assets.xcassets */,
 				EA95DC4C2A38777700D30ED5 /* Preview Content */,
 			);
@@ -276,6 +279,7 @@
 				EA9CD9812A38792E007823FF /* FavoritesView.swift in Sources */,
 				EA9CD97D2A3878B0007823FF /* HomeView.swift in Sources */,
 				EA9CD9832A387961007823FF /* FunFactsView.swift in Sources */,
+				EA58CA982A44816100104AA8 /* Welcome.swift in Sources */,
 				EA95DC492A38777500D30ED5 /* ContentView.swift in Sources */,
 				EA9CD97F2A3878D2007823FF /* StoryView.swift in Sources */,
 				EA95DC472A38777500D30ED5 /* geniUsApp.swift in Sources */,
