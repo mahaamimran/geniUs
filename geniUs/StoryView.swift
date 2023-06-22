@@ -6,8 +6,8 @@ struct StoryView: View {
     
     var body: some View {
         VStack {
-            ScrollView(.horizontal) {
-                ScrollViewReader { scrollViewProxy in
+            ScrollViewReader { scrollViewProxy in
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 0) {
                         ForEach(daysOfWeek.indices, id: \.self) { index in
                             VStack {
@@ -39,9 +39,12 @@ struct StoryView: View {
                         }
                     }
                 }
+                .onAppear {
+                    scrollViewProxy.scrollTo(selectedDayIndex, anchor: .center)
+                }
             }
+            .padding([.top, .bottom], 50)
         }
-        .padding([.top, .bottom], 50)
     }
 }
 

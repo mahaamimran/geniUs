@@ -10,7 +10,7 @@ struct ContentView: View {
 
             StoryView()
                 .tabItem {
-                    Label("Story", systemImage: "book")
+                    Label("Time Table", systemImage: "calendar")
                 }
             
             FavoritesView()
