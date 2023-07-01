@@ -63,6 +63,7 @@ struct TodayView: View {
                                 )
                                 .cornerRadius(30)
                                 .position(x: UIScreen.main.bounds.width*0.5, y: UIScreen.main.bounds.height * 0.32)
+                            
                             // date
                             VStack(alignment: .leading) {
                                 Text(getFormattedDate())
@@ -89,7 +90,7 @@ struct TodayView: View {
                         }
                         
                         // in progress line
-                        VStack(alignment: .leading){
+                        VStack{
                             HStack{
                                 Text("In Progress")
                                     .font(Font.system(size: 28).weight(.bold))
@@ -107,16 +108,20 @@ struct TodayView: View {
                                 }
                             }
                             
-                            
-                            // add more code here
+                            HStack{
+                                Rectangle()
+                                  .foregroundColor(.clear)
+                                  .frame(width: 30, height: 30)
+                                  .cornerRadius(7)
+                                  .overlay(
+                                    RoundedRectangle(cornerRadius: 7)
+                                      .inset(by: 1.5)
+                                      .stroke(Color(red: 0.85, green: 0.85, blue: 0.85), lineWidth: 3)
+                                  )
+                                }
                             
                         }
-                        
-                       
-                       
-                        
-                        
-                        .position(x: UIScreen.main.bounds.width * 0.28, y: UIScreen.main.bounds.height * 0.55)
+                        .position(x: UIScreen.main.bounds.width * 0.28, y: UIScreen.main.bounds.height * 0.6)
                         .padding(.vertical)
                     }
                 }
@@ -131,6 +136,8 @@ struct TodayView: View {
         return formatter.string(from: Date())
     }
 }
+
+
 
 
 struct TodayView_Previews: PreviewProvider {
