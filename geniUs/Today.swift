@@ -118,6 +118,7 @@ struct TodayView: View {
                                       .inset(by: 1.5)
                                       .stroke(Color(red: 0.85, green: 0.85, blue: 0.85), lineWidth: 3)
                                   )
+                                 // .position() update this
                                 }
                             
                         }
